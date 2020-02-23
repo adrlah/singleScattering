@@ -12,4 +12,5 @@ varying LNA coefficients: run the script varying_coeffs.py to generate the corre
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
-(c) 2020 Adrián Lahuerta Lavieja The code may be used for non-profit purposes as long as the copyright notice is included and [A] is credited and cited.
+(c) 2020 Adrián Lahuerta Lavieja
+The code may be used for non-profit purposes as long as the copyright notice is included and [A] is credited and cited.
