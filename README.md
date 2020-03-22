@@ -34,4 +34,4 @@ Now, you are ready to simply run the code (F5).
 
 ### Final remark
 
- Note that the _Fresnel_Integrals_ folder is protected by a different copyright. Access to the full original content can be found [here](https://mathworks.com/matlabcentral/fileexchange/28765-fresnels-and-fresnelc). 
+ Note that the _Fresnel_Integrals_ folder is protected by a different copyright. Please, read carefully the copyright file included in the folder. The full original content can be found [here](https://mathworks.com/matlabcentral/fileexchange/28765-fresnels-and-fresnelc). 
