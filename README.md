@@ -21,7 +21,7 @@ Download all the scripts and folders you can find in this project as they are ne
 Open 
 
 ```sh
-main
+TAP_singleScattering
 ``` 
 and select a scenario among the five possible options (lines 3 to 7). Scenario numbering coincides with figure numbering in [A]. 
 
