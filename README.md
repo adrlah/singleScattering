@@ -1,5 +1,5 @@
 # Simulator for "Computationally-efficient millimeter-wave back-scattering models"
-(c) 2020 Adrián Lahuerta Lavieja and Martin Johansson;
+(c) 2020 Adrián Lahuerta Lavieja and Martin Johansson;  
 e-mail: adrian.lahuerta@kuleuven.be and martin.n.johansson@ericsson.com
 
 ### Important information
@@ -23,7 +23,11 @@ Open
 ```sh
 main
 ``` 
-and select a scenario among the five possible options (lines 3 to 7). Scenario numbering coincides with figure numbering in [A]. Once you have selected the scenario, you have the freedom to choose which models you would like to simulate (lines 14 to 16). Feel free to modify the predefined _model.List_. Now, you are ready to simply run the code (F5).
+and select a scenario among the five possible options (lines 3 to 7). Scenario numbering coincides with figure numbering in [A]. 
+
+Once you have selected the scenario, you have the freedom to choose which models you would like to simulate (lines 14 to 16). Feel free to modify the predefined _model.List_. 
+
+Now, you are ready to simply run the code (F5).
 
 ### Version history
 - Version 0.1: adrian.lahuerta@kuleuven.be - simplified/commented code for GitHub
