@@ -8,7 +8,7 @@ If you are thinking of contacting us, please do not e-mail the author to ask for
 
 The software package is supplied "as is," without any accompanying support services, maintenance, or future updates. We make no warranties, explicit or implicit, that the software contained in this package is free of error or that it will meet your requirements for any particular application. It should not be relied on for any purpose where incorrect results could result in loss of property, personal injury, liability or whatsoever. If you do use our software for any such purpose, it is at your own risk. The authors disclaim all liability of any kind, either direct or consequential, resulting from your use of these programs.
 
-The code may be used for non-profit purposes as long as the copyright notice is included and [A] is credited and cited.
+The code (or parts of it) may be used for non-profit purposes as long as the copyright notice is included and [A] is credited and cited.
 
 [A] A. Lahuerta-Lavieja, M. Johansson, U. Gustavsson, and G. A. E. Vandenbosch, "Computationally-efficient millimeter-wave back-scattering models," to be published in IEEE Trans. Antennas Propag., 2020.
 
