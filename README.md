@@ -25,7 +25,7 @@ TAP_singleScattering
 ``` 
 and select a scenario among the five possible options (lines 3 to 7). Scenario numbering coincides with figure numbering in [A]. 
 
-Once you have selected the scenario, you have the freedom to choose which models you would like to simulate (lines 14 to 16). Feel free to modify the predefined _model.List_. 
+Once you have selected the scenario, you have the freedom to choose which models you would like to simulate (lines 14 to 16). Feel free to modify the predefined _model.List_ options. 
 
 Now, you are ready to simply run the code (F5).
 
