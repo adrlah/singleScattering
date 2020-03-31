@@ -14,9 +14,11 @@ The code (or parts of it) may be used for non-profit purposes as long as the cop
 
 ### How to set up the simulation environment
 
-Download all the scripts and folders you can find in this project as they are needed for a smooth execution. Navigate in Matlab to the directory containing the script TAP_singleScattering.m.
+Download all the scripts and folders you can find in this project as they are needed for a smooth execution.
 
 ### How to start a simulation
+
+Navigate in Matlab to the directory containing the script TAP_singleScattering.m.
 
 Open 
 
