@@ -828,9 +828,9 @@ theta=pi/2-theta;
 end
 
 function gammaFresnel = ourFresnelModel(scenario, iteration, m)
-
 % 3D Fresnel model
-% [1] Update with our paper
+% [1] A. Lahuerta-Lavieja, M. Johansson, U. Gustavsson, T. A. H. Bressner, and G. A. E. Vandenbosch, 
+% "Computationally-efficient millimeter-wave back-scattering models," to be published in IEEE Trans. Antennas Propag., 2020.
 
 lambda = scenario.lambda;
 deltaR = iteration.deltaR(:,m);
@@ -840,9 +840,9 @@ gammaFresnel = 0.5*1j*(((fresnelInts(1)*signs(1)+fresnelInts(2)*signs(2))*(fresn
 end
 
 function gammaErf = ourErfModel(scenario, iteration, m)
-
-% erf model
-% [1] Update with our paper
+% erf model [1]
+% [1] A. Lahuerta-Lavieja, M. Johansson, U. Gustavsson, T. A. H. Bressner, and G. A. E. Vandenbosch, 
+% "Computationally-efficient millimeter-wave back-scattering models," to be published in IEEE Trans. Antennas Propag., 2020.
 
 lambda = scenario.lambda;
 deltaR = iteration.deltaR(:,m);
@@ -852,7 +852,6 @@ gammaErf = ((erfInts(1)*signs(1)+erfInts(2)*signs(2))*(erfInts(3)*signs(3)+erfIn
 end
 
 function gammaMetis = metisModel(scenario, iteration, m)
-
 % M-METIS model
 % Based on METIS D1.4 Section C.1.4: Shadowing objects
 % url: https://www.metis2020.com/wp-content/uploads/METIS_D1.4_v3.pdf
@@ -865,7 +864,6 @@ gammaMetis = ((metisTerms(1)*signs(1)+metisTerms(2)*signs(2))*(metisTerms(3)*sig
 end
 
 function [gammaMetisRCS] =  metisRCSmodel(scenario, iteration, m)
-
 % METIS RCS scattering model
 % Based on METIS D1.4 Section C.1.5 Scattering objects
 % url: https://www.metis2020.com/wp-content/uploads/METIS_D1.4_v3.pdf
@@ -887,7 +885,6 @@ gammaMetisRCS =  sqrt(correction*Ssc*RCS*(lambda/(4*pi*R2))^2*(1-gammaMetisRCS0)
 end
 
 function gammaMMMagic = mmMAGICModel(scenario, iteration, k, m)
-
 % M-mmMAGIC model
 % Based on mmMAGIC D2.2 Section 4.6.3 Blockage
 % url: https://bscw.5g-mmmagic.eu/pub/bscw.cgi/d202656/mmMAGIC_D2-2.pdf
@@ -916,7 +913,6 @@ gammaMMMagic = ((mmMAGICTerms(1)*signs(1)+mmMAGICTerms(2)*signs(2))*(mmMAGICTerm
 end
 
 function gammaITUFres = ITUfresnelModel(scenario, iteration, m)
-
 % Based on ITU Recommendation P.526-14 Section 5.2.1.1: Fresnel integral method
 % url: https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.526-14-201801-I!!PDF-E.pdf
 
@@ -962,7 +958,6 @@ gammaITUFres = conj((Cx*Sy + Sx*Cy) + 1j*(Sx*Sy - Cx*Cy))*0.5;
 end
 
 function gammaITUEmp = ITUsemiEmpModel(scenario, iteration, k, m)
-
 % Based on ITU Recommendation P.526-14 Section 5.2.1.2: Semi-empirical method
 % url: https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.526-14-201801-I!!PDF-E.pdf
 
@@ -1237,8 +1232,6 @@ Amp     = I1.*I2*scaleToDirectivity;
 E_theta = -Amp.*(cos(phi) + sin(theta));
 E_phi   = Amp.*cos(theta).*sin(phi);
 end
-
-
 
 function dO=dOmega_TAP(theta,phi,varargin)   
 limits = varargin{1}; 
