@@ -928,7 +928,7 @@ t1 = t1/norm(t1);
 t2 = xyzEdges(4,:) - xyzEdges(3,:);
 t2 = t2/norm(t2);
 n  = cross(t1,t2);
-n  = n/norm(n);
+n  = abs(n/norm(n));
 
 zt = dot(xyzRP-xyzTx0, n);
 zr = dot(xyzRx0-xyzRP, n);
@@ -976,7 +976,7 @@ t1 = t1/norm(t1);
 t2 = xyzEdges(4,:) - xyzEdges(3,:);
 t2 = t2/norm(t2);
 n  = cross(t1,t2);
-n  = n/norm(n);
+n  = abs(n/norm(n));
 
 zt = dot(xyzRP-xyzTx0, n);
 zr = dot(xyzRx0-xyzRP, n);
