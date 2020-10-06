@@ -5,7 +5,7 @@ function TAP_singleScattering
 % The code (or parts of it) may be used for non-profit purposes as long
 % the copyright notice is included and [A] is credited and cited.
 
-% [A] A. Lahuerta-Lavieja, M. Johansson, C. Larsson, U. Gustavsson, and 
+% [A] A. Lahuerta-Lavieja, M. Johansson, U. Gustavsson, and 
 % G. A. E. Vandenbosch, "Computationally efficient millimeter-wave 
 % backscattering models: A combined blockage and backscattering 
 % single-scattering model," IEEE Trans. Antennas Propag., vol. 68, no. 8,
