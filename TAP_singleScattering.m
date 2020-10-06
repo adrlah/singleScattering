@@ -1,10 +1,22 @@
 function TAP_singleScattering
-%% Scenarios for testing the single-scattering models
-% scenario.number = 2; % Scenario from the paper Fig. 2
-% scenario.number = 4; % Scenario from the paper Fig. 4
-% scenario.number = 5; % Scenario from the paper Fig. 5
-scenario.number = 6; % Scenario from the paper Fig. 6
-% scenario.number = 7; % Scenario from the paper Fig. 7
+% (c) 2020 Adrián Lahuerta Lavieja and Martin Johansson;
+% e-mail: adrian.lahuerta@kuleuven.be and martin.n.johansson@ericsson.com
+
+% The code (or parts of it) may be used for non-profit purposes as long
+% the copyright notice is included and [A] is credited and cited.
+
+% [A] A. Lahuerta-Lavieja, M. Johansson, C. Larsson, U. Gustavsson, and 
+% G. A. E. Vandenbosch, "Computationally efficient millimeter-wave 
+% backscattering models: A combined blockage and backscattering 
+% single-scattering model," IEEE Trans. Antennas Propag., vol. 68, no. 8,
+% pp. 6306–6316, 2020.
+
+%% Scenarios for testing the single-scattering model
+% scenario.number = 2; % Scenario from Fig. 2 in [A]
+% scenario.number = 4; % Scenario from Fig. 4 in [A]
+% scenario.number = 5; % Scenario from Fig. 5 in [A]
+scenario.number = 6; % Scenario from Fig. 6 in [A]
+% scenario.number = 7; % Scenario from Fig. 7 in [A]
 
 %% Print scenario
 fprintf(['\n Scenario ' num2str(scenario.number) ' \n \n'])
@@ -928,7 +940,7 @@ t1 = t1/norm(t1);
 t2 = xyzEdges(4,:) - xyzEdges(3,:);
 t2 = t2/norm(t2);
 n  = cross(t1,t2);
-n  = abs(n/norm(n));
+n  = n/norm(n);
 
 zt = dot(xyzRP-xyzTx0, n);
 zr = dot(xyzRx0-xyzRP, n);
@@ -976,7 +988,7 @@ t1 = t1/norm(t1);
 t2 = xyzEdges(4,:) - xyzEdges(3,:);
 t2 = t2/norm(t2);
 n  = cross(t1,t2);
-n  = abs(n/norm(n));
+n  = n/norm(n);
 
 zt = dot(xyzRP-xyzTx0, n);
 zr = dot(xyzRx0-xyzRP, n);
