@@ -32,7 +32,7 @@ Once you have selected the scenario, you have the freedom to choose which models
 Now, you are ready to simply run the code (F5).
 
 ### Version history
-- Version 0.1: adrian.lahuerta@kuleuven.be - simplified/commented code for GitHub
+- Version 0.1: adrian.lahuerta.lavieja@ericsson.com - simplified/commented code for GitHub
 
 ### Final remark
 
